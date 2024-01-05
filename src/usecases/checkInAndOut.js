@@ -55,7 +55,7 @@ class AttendanceManager {
           getEmployee._id,
           getShift.timings.start
         );
-        return apiResponseHelper(res, 201, "Checked in successfully");
+        return apiResponseHelper(res, 200, "Checked in successfully");
       }
 
       if (getAttendance.status === "Checked In") {
