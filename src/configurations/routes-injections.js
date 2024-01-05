@@ -20,7 +20,7 @@ const checkInAndOutUseCase = new CheckInAndOutUseCase(
   "shift",
   "attendance"
 );
-const getEmailsUseCase = new EmailsGetter(mongoRepository, "user");
+const getEmailsUseCase = new EmailsGetter(mongoRepository, "employee");
 
 const controller = new Controller(
   verifyDeviceUseCase,
