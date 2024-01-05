@@ -1,0 +1,41 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes":[
+     {
+      "src": "/(.*)",
+      "dest": "src/app.js"
+    }
+  ],
+  "env": {
+    "MONGO_URL": "mongodb+srv://hassanm8537:b7CnN4Ucf15LhdJv@attendance-managment-cl.gxnbmgs.mongodb.net/?retryWrites=true&w=majority",
+    "PORT": "9564",
+    "JWT_SECRET":"bf6f5e258281866157191225ce800d8a34f2065a62cb99fe46b44339b7eddb04",
+    "SESSION_SECRET":"270593bebf22ba008f1283eb73a700dc0446d30ed03313b301bc10186ee7f8c9",
+    "AUTH_USER":"hassan.m.8537@gmail.com",
+    "AUTH_PASS":"wiqadnvnhnjlsijj",
+    "MAC_ADDRESS":"B4-69-21-76-35-68",
+    "SERVICE_TYPE":"gmail"
+  },
+  "build": {
+    "env": {
+        "MONGO_URL": "mongodb+srv://hassanm8537:b7CnN4Ucf15LhdJv@attendance-managment-cl.gxnbmgs.mongodb.net/?retryWrites=true&w=majority",
+        "PORT": "9564",
+        "JWT_SECRET":"bf6f5e258281866157191225ce800d8a34f2065a62cb99fe46b44339b7eddb04",
+        "SESSION_SECRET":"270593bebf22ba008f1283eb73a700dc0446d30ed03313b301bc10186ee7f8c9",
+        "AUTH_USER":"hassan.m.8537@gmail.com",
+        "AUTH_PASS":"wiqadnvnhnjlsijj",
+        "MAC_ADDRESS":"B4-69-21-76-35-68",
+        "SERVICE_TYPE":"gmail"
+
+    },
+    "commands": {
+      "build": "npm install && npm run build"
+    }
+  }
+}
