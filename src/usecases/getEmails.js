@@ -10,7 +10,7 @@ class EmailsGetter {
   async getEmails(req, res) {
     try {
       const employeeEmails = await this.repository.find(this.employeeModel);
-
+      console.log({ employeeEmails });
       if (isNotFound(employeeEmails)) {
         return apiResponseHelper(res, 404, "No email found");
       } else {
